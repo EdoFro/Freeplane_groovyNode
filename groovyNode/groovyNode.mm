@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-8.25 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-6.75 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -404,6 +404,7 @@
 <node TEXT="en" ID="ID_1453910500">
 <attribute_layout NAME_WIDTH="84 pt" VALUE_WIDTH="69.75 pt"/>
 <attribute NAME="addons.${name}" VALUE="groovyNode"/>
+<attribute NAME="addons.${name}.importGroovyNodeStyles" VALUE="Import groovy node styles"/>
 </node>
 </node>
 <node TEXT="deinstall" POSITION="left" ID="ID_529115762"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -421,6 +422,8 @@
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyNode/groovy-G.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/groovyNode.jar"/>
+<attribute NAME="delete" VALUE="${installationbase}/addons/${name}/scripts/importGroovyNodeStyles.groovy"/>
+<attribute NAME="delete" VALUE="${installationbase}/templates/groovyNode/GroovyNodeTemplate.mm"/>
 </node>
 <node TEXT="scripts" POSITION="right" ID="ID_1211410492"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -539,6 +542,18 @@
   </body>
 </html>
 </richcontent>
+<node TEXT="importGroovyNodeStyles.groovy" ID="ID_1539447840">
+<attribute_layout NAME_WIDTH="204.74999 pt" VALUE_WIDTH="188.99999 pt"/>
+<attribute NAME="menuTitleKey" VALUE="addons.${name}.importGroovyNodeStyles"/>
+<attribute NAME="menuLocation" VALUE="${addonsMenu}/addons.${name}"/>
+<attribute NAME="executionMode" VALUE="on_single_node"/>
+<attribute NAME="keyboardShortcut" VALUE=""/>
+<attribute NAME="execute_scripts_without_asking" VALUE="true"/>
+<attribute NAME="execute_scripts_without_file_restriction" VALUE="true"/>
+<attribute NAME="execute_scripts_without_write_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_exec_restriction" VALUE="false"/>
+<attribute NAME="execute_scripts_without_network_restriction" VALUE="false"/>
+</node>
 </node>
 <node TEXT="lib" POSITION="right" ID="ID_1833130204"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
