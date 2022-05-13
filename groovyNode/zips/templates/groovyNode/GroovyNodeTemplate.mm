@@ -51,7 +51,7 @@
 <stylenode LOCALIZED_TEXT="styles.user-defined" POSITION="right" ID="ID_1030349299" STYLE="bubble">
 <stylenode TEXT="GroovyNode" ID="ID_880636912" ICON_SIZE="16 pt" COLOR="#286b86" BACKGROUND_COLOR="#92c5d7" STYLE="bubble" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#286b86">
 <icon BUILTIN="groovyNode/groovy-G"/>
-<font NAME="Harlow Solid Italic" SIZE="12"/>
+<font NAME="Bauhaus 93"/>
 </stylenode>
 <stylenode TEXT="hasGroovyNode" ID="ID_1779347241">
 <icon BUILTIN="groovyNode/groovy-G"/>
@@ -107,8 +107,7 @@
       println a
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <richcontent CONTENT-TYPE="xml/" TYPE="DETAILS">
 <html>
   <head>
@@ -119,8 +118,7 @@
       .groovy
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -163,6 +161,7 @@
 <node TEXT="this is the GroovyNode style" ID="ID_4511529" COLOR="#286b86" BACKGROUND_COLOR="#92c5d7" STYLE="bubble" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#286b86">
 <font NAME="Rockwell"/>
 </node>
+<node TEXT="this is the GroovyNode style" ID="ID_1103164612" STYLE="bubble"/>
 <node TEXT="this is the GroovyNode style" ID="ID_1522228587" COLOR="#286b86" BACKGROUND_COLOR="#92c5d7" STYLE="bubble" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#286b86">
 <font NAME="Yu Gothic UI"/>
 </node>
