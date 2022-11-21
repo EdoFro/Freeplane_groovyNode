@@ -8,7 +8,7 @@
 <font SIZE="24"/>
 <stylenode LOCALIZED_TEXT="styles.predefined" POSITION="right" STYLE="bubble">
 <stylenode LOCALIZED_TEXT="default" ID="ID_506805493" ICON_SIZE="12 pt" FORMAT_AS_HYPERLINK="false" COLOR="#484747" BACKGROUND_COLOR="#efefef" STYLE="bubble" SHAPE_HORIZONTAL_MARGIN="5 px" SHAPE_VERTICAL_MARGIN="2 px" NUMBERED="false" FORMAT="STANDARD_FORMAT" TEXT_ALIGN="DEFAULT" BORDER_WIDTH_LIKE_EDGE="false" BORDER_WIDTH="1.9 px" BORDER_COLOR_LIKE_EDGE="false" BORDER_COLOR="#8fbcbb" BORDER_DASH_LIKE_EDGE="true" BORDER_DASH="SOLID" VGAP_QUANTITY="2 px" MAX_WIDTH="10 cm" MIN_WIDTH="0 cm">
-<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45 pt;-5.25 pt;" ENDINCLINATION="57 pt;30 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
+<arrowlink SHAPE="CUBIC_CURVE" COLOR="#bf5d3f" WIDTH="2" TRANSPARENCY="200" DASH="" FONT_SIZE="9" FONT_FAMILY="SansSerif" DESTINATION="ID_506805493" STARTINCLINATION="45.19149 pt;-4.59574 pt;" ENDINCLINATION="56.68085 pt;29.87234 pt;" STARTARROW="NONE" ENDARROW="DEFAULT"/>
 <font NAME="Dialog" SIZE="10" BOLD="false" STRIKETHROUGH="false" ITALIC="false"/>
 <edge STYLE="horizontal" COLOR="#2e3440" WIDTH="1" DASH="SOLID"/>
 <richcontent CONTENT-TYPE="plain/auto" TYPE="DETAILS"/>
@@ -77,9 +77,9 @@
 </map_styles>
 </hook>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<attribute_layout NAME_WIDTH="108 pt" VALUE_WIDTH="262.49999 pt"/>
+<attribute_layout NAME_WIDTH="101.87234 pt" VALUE_WIDTH="242.80851 pt"/>
 <attribute NAME="name" VALUE="groovyNode"/>
-<attribute NAME="version" VALUE="v0.0.1"/>
+<attribute NAME="version" VALUE="v0.0.2"/>
 <attribute NAME="author" VALUE="EdoFro"/>
 <attribute NAME="freeplaneVersionFrom" VALUE="v1.9.1"/>
 <attribute NAME="freeplaneVersionTo" VALUE=""/>
@@ -161,7 +161,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="description" POSITION="left" ID="ID_1456276837"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
+<node TEXT="description" POSITION="left" ID="ID_1456276837" VGAP_QUANTITY="2 px"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
   <head>
     
@@ -177,7 +177,8 @@
       To translate the description you have to define a translation for the key 'addons.${name}.description'.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node ID="ID_1801020855"><richcontent TYPE="NODE">
 
 <html>
@@ -212,9 +213,14 @@
       Change log of this add-on: append one node for each noteworthy version and put the details for each version into a child node.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="v0.0.1" ID="ID_1580601329">
 <node TEXT="Initial release" ID="ID_185557319"/>
+</node>
+<node TEXT="v0.0.2" ID="ID_1757894678">
+<node TEXT="&quot;attributeForExtensions&quot; is no longer read from the configuration properties." ID="ID_277642889"/>
+<node TEXT="Added icon" ID="ID_322514804"/>
 </node>
 </node>
 <node TEXT="license" POSITION="left" ID="ID_25134703"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -233,7 +239,8 @@
       The License text has to be entered as a child of the <i>'license'</i>&nbsp;node, either as plain text or as HTML.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="MIT License&#xa;Copyright (c) 2022 Eduardo Frohlich.&#xa;Permission is hereby granted, free of charge, to any person obtaining a copy of this software&#xa; and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction,&#xa; including without limitation the rights to use, copy, modify, merge, publish, distribute,&#xa; sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is&#xa;furnished to do so, subject to the following conditions:&#xa;The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.&#xa;THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS&#xa;OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&#xa;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL&#xa;THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR&#xa;OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,&#xa;ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR&#xa;OTHER DEALINGS IN THE SOFTWARE." ID="ID_1185259036"/>
 </node>
 <node TEXT="preferences.xml" POSITION="left" ID="ID_972207366"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -342,7 +349,8 @@
       </tr>
     </table>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node TEXT="default.properties" POSITION="left" ID="ID_392310393"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -362,7 +370,8 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node TEXT="translations" POSITION="left" ID="ID_1750093562"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -394,7 +403,8 @@
       </li>
     </ul>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="en" ID="ID_1453910500">
 <attribute_layout NAME_WIDTH="84 pt" VALUE_WIDTH="69.75 pt"/>
 <attribute NAME="addons.${name}" VALUE="groovyNode"/>
@@ -411,7 +421,8 @@
       List of files and/or directories to remove on uninstall
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}.script.xml"/>
 <attribute NAME="delete" VALUE="${installationbase}/icons/groovyNode/groovy-G.svg"/>
 <attribute NAME="delete" VALUE="${installationbase}/addons/${name}/lib/groovyNode.jar"/>
@@ -533,7 +544,8 @@
       &nbsp;&nbsp;- In any case set execute_scripts_without_asking to true unless you want to annoy users.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="importGroovyNodeStyles.groovy" ID="ID_1539447840">
 <attribute_layout NAME_WIDTH="204.74999 pt" VALUE_WIDTH="188.99999 pt"/>
 <attribute NAME="menuTitleKey" VALUE="addons.${name}.importGroovyNodeStyles"/>
@@ -581,7 +593,8 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="groovyNode.jar" ID="ID_1553676204"/>
 </node>
 <node TEXT="zips" POSITION="right" ID="ID_975730112"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
@@ -618,10 +631,10 @@
       &nbsp;- The files will be processed in the sequence as seen in the map.
     </p>
   </body>
-</html></richcontent>
-<node TEXT="doc" ID="ID_54052170"/>
-<node TEXT="icons" ID="ID_1800557733"/>
+</html>
+</richcontent>
 <node TEXT="templates" ID="ID_29684125"/>
+<node TEXT="icons" ID="ID_481789401"/>
 </node>
 <node TEXT="images" POSITION="right" ID="ID_1252918516"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -653,7 +666,8 @@
       Images can be added automatically by releaseAddOn.groovy or must be uploaded into the map via the script <i>Tools-&gt;Scripts-&gt;Insert Binary</i>&nbsp;since they have to be (base64) encoded as simple strings.
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node TEXT="actions" POSITION="right" ID="ID_828541674"><richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -663,7 +677,8 @@
   <body>
     Direct links to menu commands
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node TEXT="Build add-on" ID="ID_1171953321" LINK="menuitem:_addons.devtools.checkAddOn_on_single_node"/>
 <node TEXT="Package add-on for publication" ID="ID_1951732739" LINK="menuitem:_addons.devtools.releaseAddOn_on_single_node"/>
 <node TEXT="Export Translations" ID="ID_324729256" LINK="menuitem:_addons.devtools.exportTranslations_on_single_node"/>

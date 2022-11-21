@@ -1,14 +1,15 @@
 package edofro.freeplane.groovynode
 
-import org.freeplane.plugin.script.FreeplaneScriptBaseClass
-import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
+// import org.freeplane.plugin.script.FreeplaneScriptBaseClass
+// import org.freeplane.plugin.script.FreeplaneScriptBaseClass.ConfigProperties
 
 
 class GN {
 
 //region: properties
 
-    static final String attributeForExtensions =  new ConfigProperties().getProperty('groovyConsole_attributeForExtensions','file_ext')
+    // static final String attributeForExtensions =  new ConfigProperties().getProperty('groovyConsole_attributeForExtensions','file_ext')
+    static final String attributeForExtensions =  'file_ext'
 
 //end:
 

@@ -10,21 +10,21 @@
             </script_condition>
         </conditional_style>
         <conditional_style ACTIVE="true" STYLE_REF="hasGroovyNode" LAST="false">
-            <any_descendant_condition>
-                <script_condition>
-                    <script>try { edofro.freeplane.groovynode.GN.isGroovyNode(node) } catch(e) { false }</script>
-                </script_condition>
-            </any_descendant_condition>
-        </conditional_style>
-        <conditional_style ACTIVE="false" STYLE_REF="hasGroovyNode" LAST="false">
             <script_condition>
                 <script>(node.findAll() - node).any{
     edofro.freeplane.groovynode.GN.isGroovyNode(it)
 }</script>
             </script_condition>
         </conditional_style>
+        <conditional_style ACTIVE="false" STYLE_REF="hasGroovyNode" LAST="false">
+            <any_descendant_condition>
+                <script_condition>
+                    <script>try { edofro.freeplane.groovynode.GN.isGroovyNode(node) } catch(e) { false }</script>
+                </script_condition>
+            </any_descendant_condition>
+        </conditional_style>
     </conditional_styles>
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" save_folding="never_save_folding" fit_to_viewport="false"/>
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" mapUsesOwnSaveOptions="true" save_modification_times="false" save_last_visited_node="default" associatedTemplateLocation="template:/standard-1.6.mm" show_note_icons="true" save_folding="never_save_folding" fit_to_viewport="false" show_icon_for_attributes="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" ID="ID_265742900" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
